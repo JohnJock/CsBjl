@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/iv_line1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginTop="20dp"
+                android:src="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="标题："
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_adversise_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请输入标题"
+                    android:inputType="text"
+                    android:textColor="@color/black333"
+                    android:textColorHint="@color/text_main_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="姓名："
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_jobwanted_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="@null"
+                    android:hint="请输入申请人姓名"
+                    android:inputType="text"
+                    android:textColor="@color/black333"
+                    android:textColorHint="@color/text_main_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="性别："
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_jobwanted_sex"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="@null"
+                    android:hint="请输入性别"
+                    android:inputType="text"
+                    android:textColor="@color/black333"
+                    android:textColorHint="@color/text_main_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="年龄："
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_jobwanted_age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入年龄"
+                    android:inputType="number"
+                    android:textColor="@color/black333"
+                    android:textColorHint="@color/text_main_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="岁"
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/iv_line4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="期望月薪："
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_jobwanted_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入您的期望薪资"
+                    android:inputType="number"
+                    android:textColor="@color/black333"
+                    android:textColorHint="@color/text_main_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="元/月"
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_line6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="联系方式："
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_jobwanted_telephone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="@null"
+                    android:hint="请输入联系电话"
+                    android:inputType="phone"
+                    android:textColor="@color/black333"
+                    android:textColorHint="@color/text_main_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_line7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="right"
+                android:text="自我介绍："
+                android:textColor="@color/black333"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_jobwanted_des"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:maxLength="100"
+                android:maxLines="3"
+                android:padding="10dp"
+                android:textColor="@color/black333"
+                android:textColorHint="@color/text_main_color"
+                android:textSize="15sp" />
+
+
+        
+
+            <ImageView
+                android:id="@+id/iv_line11"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <Button
+                android:id="@+id/btn_jobwanted_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_selector_click"
+                android:text="发布"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

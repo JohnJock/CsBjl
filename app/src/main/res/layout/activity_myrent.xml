@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <ImageView
+                android:id="@+id/iv_line1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginTop="20dp"
+                android:src="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_below="@id/iv_line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="标题："
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_myrent_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="@null"
+                    android:hint="请输入标题"
+                    android:inputType="text"
+                    android:textColor="@color/black333"
+                    android:textColorHint="@color/text_main_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_below="@id/ll1"
+                android:id="@+id/iv_line2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_below="@id/iv_line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="面积："
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_myrent_area"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="@null"
+                    android:hint="请输入房屋面积"
+                    android:inputType="number"
+                    android:textColor="@color/black333"
+                    android:textColorHint="@color/text_main_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="㎡"
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_below="@id/ll2"
+                android:id="@+id/iv_line4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_below="@id/iv_line4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="租金："
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_myrent_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="@null"
+                    android:hint="请输入月租金"
+                    android:inputType="number"
+                    android:textColor="@color/black333"
+                    android:textColorHint="@color/text_main_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="元"
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_line6"
+                android:layout_below="@id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_below="@id/iv_line6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="电话："
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_myrent_telephone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="@null"
+                    android:hint="请输入联系电话"
+                    android:inputType="phone"
+                    android:textColor="@color/black333"
+                    android:textColorHint="@color/text_main_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="@color/black333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_below="@id/ll4"
+                android:id="@+id/iv_line7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_below="@id/iv_line7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="图片上传："
+                android:textColor="@color/black333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_below="@id/tv1"
+                android:id="@+id/iv_line8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <com.android.bjl.widget.headerlistview.MyGridView
+                android:id="@+id/noScrollgridview"
+                android:layout_width="match_parent"
+                android:layout_below="@id/iv_line8"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:background="@color/white"
+                android:horizontalSpacing="3dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="3dp">
+
+            </com.android.bjl.widget.headerlistview.MyGridView>
+
+
+            <ImageView
+                android:id="@+id/iv_line9"
+                android:layout_below="@id/noScrollgridview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_below="@id/iv_line9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="房子简介："
+                android:textColor="@color/black333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_below="@id/tv2"
+                android:id="@+id/iv_line10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <EditText
+                android:layout_below="@id/iv_line10"
+                android:id="@+id/et_myrent_description"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"
+                android:hint="请简单介绍一下"
+                android:inputType="textMultiLine"
+                android:maxLength="100"
+                android:maxLines="3"
+                android:gravity="top"
+                android:padding="10dp"
+                android:textColor="@color/black333"
+                android:textColorHint="@color/text_main_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_below="@id/et_myrent_description"
+                android:id="@+id/iv_line11"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <Button
+                android:id="@+id/btn_myrent_done"
+                android:layout_below="@id/iv_line11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_selector_click"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

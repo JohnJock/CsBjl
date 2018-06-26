@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical"
+    android:id="@+id/re_fist">
+
+    <com.android.bjl.widget.NoScrollViewPager
+        android:id="@+id/viewfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+    <ImageView
+        android:id="@+id/iv_line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+
+        android:src="@color/line"/>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#32849C">
+        <RadioButton
+            android:id="@+id/radio_first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_radio_one_bg"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="首页"
+            android:textSize="13sp"
+            android:textColor="@drawable/radio_text_check"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/radio_second"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_radio_two_bg"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="农村治理"
+            android:textSize="13sp"
+            android:textColor="@drawable/radio_text_check"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/radio_third"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_radio_three_bg"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="出租房管理"
+            android:textSize="13sp"
+            android:textColor="@drawable/radio_text_check"
+            android:checked="false" />
+        <RadioButton
+            android:id="@+id/radio_myaccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_radio_four_bg"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="个人中心"
+            android:textSize="13sp"
+            android:textColor="@drawable/radio_text_check"
+            android:checked="false" />
+    </RadioGroup>
+
+</LinearLayout >

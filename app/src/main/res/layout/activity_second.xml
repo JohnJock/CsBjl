@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar"></include>
+
+
+    <com.android.bjl.widget.headerlistview.XListView
+        android:id="@+id/second_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/bg_text_click_white"
+        android:background="@android:color/white" />
+    <TextView
+        android:id="@+id/tv_none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingTop="80dp"
+        android:drawableTop="@mipmap/iv_order_noidea"
+        android:text="@string/no_idea"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black333"
+        android:visibility="gone"/>
+</LinearLayout>

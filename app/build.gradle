@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.android.bjl"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    signingConfigs {
+        debug{
+            storeFile file("android.jks")
+            keyAlias 'androidstuidoapp'
+            keyPassword 'wangjingjie'
+            storePassword 'wangjingjie'
+        }
+        release {
+            storeFile file("android.jks")
+            keyAlias 'androidstuidoapp'
+            keyPassword 'wangjingjie'
+            storePassword 'wangjingjie'
+        }
+    }
+    buildTypes {
+        release {
+            //是否混淆
+            minifyEnabled false
+            //是否移除无用资源
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation project(':wechatphoto')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    api 'com.jakewharton:butterknife:8.4.0'
+    // butterknife依赖
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    // butterknife依赖
+    implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+    //4.4以上沉浸式状态栏
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    implementation 'com.squareup.okio:okio:1.13.0'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'org.jsoup:jsoup:1.10.2'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+}

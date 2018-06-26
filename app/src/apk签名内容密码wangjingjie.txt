@@ -1,0 +1,29 @@
+密钥库类型: JKS
+密钥库提供方: SUN
+
+您的密钥库包含 2 个条目
+
+别名: androidstudio
+创建日期: 2017-12-11
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=王京杰, OU=北京锐融天下科技股份有限公司
+发布者: CN=王京杰, OU=北京锐融天下科技股份有限公司
+序列号: 46c499fa
+有效期开始日期: Mon Dec 11 14:36:03 CST 2017, 截止日期: Fri Dec 05 14:36:03 CST 2042
+证书指纹:
+         MD5: 1F:96:AA:EC:D5:7F:6C:BE:70:F3:E4:0D:4C:86:A4:AB
+         SHA1: 5D:F0:5E:56:FC:48:9F:B7:82:EA:01:89:AB:F7:5A:6B:B6:1A:0D:73
+         SHA256: A2:73:0B:3F:1D:09:12:C1:B2:5A:14:84:C2:1E:D7:80:25:08:96:7F:9B:EC:D9:8A:8B:60:D8:7E:6F:2C:9C:86
+         签名算法名称: SHA256withRSA
+         版本: 3
+
+
+
+debug{
+            storeFile file("android.jks")
+            keyAlias 'androidstuidoapp'
+            keyPassword 'wangjingjie'
+            storePassword 'wangjingjie'
+        }

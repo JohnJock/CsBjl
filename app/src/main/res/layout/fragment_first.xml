@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CECBD7"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/title_bar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/fragment_first_scrollview"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.bigkoo.convenientbanner.ConvenientBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fragment_first_convenientBanner"
+                android:layout_width="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_height="160dp"
+                app:canLoop="true" /><!--app:canLoop="true"/控制循环与否-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:src="@color/line" />
+
+            <com.android.bjl.widget.headerlistview.MyGridView
+                android:id="@+id/fragment_first_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gv_bg"
+                android:horizontalSpacing="1dp"
+                android:numColumns="3"
+                android:layout_margin="15dp"
+                android:padding="1dp"
+                android:scrollbars="none"
+                android:verticalSpacing="1dp"></com.android.bjl.widget.headerlistview.MyGridView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CECBD7">
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/title_bar" />
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title"
+        android:layout_marginBottom="60dp"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+           >
+
+            <TextView
+                android:id="@+id/cmpl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginVertical="15dp"
+                android:textSize="18sp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#CECBD7"
+                />
+            <LinearLayout
+                android:id="@+id/cmpl_ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="15dp">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:padding="3dp"
+        android:layout_marginTop="15dp"
+        android:background="#ccc"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <com.android.bjl.widget.ClearEditText
+            android:id="@+id/cmpl_et"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/et_bg"
+            android:hint="请输入评论"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"
+            android:paddingBottom="3dp"
+            android:text=""
+            android:textColor="#b4b4b4"
+            android:textSize="16sp" />
+        />
+        <TextView
+            android:id="@+id/cmpl_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="评论"
+            android:gravity="center"
+            android:textColor="#2e88ff"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</RelativeLayout>

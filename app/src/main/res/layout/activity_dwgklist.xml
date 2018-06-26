@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar"></include>
+
+    <TextView
+        android:id="@+id/idwgk_v_order_noidea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="80dp"
+        android:drawableTop="@mipmap/iv_order_noidea"
+        android:drawablePadding="30dp"
+        android:text="@string/no_idea"
+        android:textSize="15sp"
+        android:textColor="@color/black333"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/dwgk_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/bg_text_click_white"
+        android:background="@android:color/white" />
+</LinearLayout>

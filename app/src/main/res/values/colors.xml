@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="titleColor">#EE6A50</color>
+    <color name="orange_title">#daa138</color>
+    <color name="white">#ffffff</color>
+    <color name="click">#f5f5f5</color><!-- 灰色 -->
+    <color name="line">#f0f0f0</color>
+    <color name="black333">#333333</color>
+    <color name="black">#000000</color>
+    <color name="bg_activity">#FAFAFA</color>
+    <color name="text_main_color">#a5a5a5</color>
+
+</resources>
