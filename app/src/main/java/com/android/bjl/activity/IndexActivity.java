@@ -27,7 +27,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * 首页
+ * 这是首页的入口
  */
 public class IndexActivity extends BaseActivity implements View.OnClickListener {
     public static  RadioButton first, second, third, myaccount;
