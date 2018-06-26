@@ -44,7 +44,7 @@ public class IndexActivity extends BaseActivity implements View.OnClickListener 
         setContentView(R.layout.activity_index);
         initView();
     }
-
+    //我加了代码 表示我在测试分支
     public void initView() {
         first = (RadioButton) findViewById(R.id.radio_first);
         second = (RadioButton) findViewById(R.id.radio_second);
