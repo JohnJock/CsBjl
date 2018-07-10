@@ -314,8 +314,14 @@ Context context;
     }
 
     private boolean cacheBitmap2Disk(Bitmap bitmap, OutputStream outputStream) {
-        bitmap.compress(DEFAULT_COMPRESS_FORMAT, DEFAULT_COMPRESS_QUALITY, outputStream);
-        return true;
+        try {
+            bitmap.compress(DEFAULT_COMPRESS_FORMAT, DEFAULT_COMPRESS_QUALITY, outputStream);
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }
+
     }
 
 

@@ -489,13 +489,14 @@ public class PhotoPickerActivity extends AppCompatActivity implements PhotoAdapt
                 // 创建临时文件
                 mTmpFile = OtherUtils.createTmpFile(getApplicationContext());
 
-            }catch ( Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
-            } if (mTmpFile != null && mTmpFile.exists()) {
+            }
+            if (mTmpFile != null && mTmpFile.exists()) {
                 cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(mTmpFile));
                 startActivityForResult(cameraIntent, REQUEST_CAMERA);
             } else {
-                Toast.makeText(this,"图片格式错误", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "图片格式错误", Toast.LENGTH_SHORT).show();
             }
 
 

@@ -55,7 +55,7 @@ public class MyRentListActivity extends BaseActivity {
     private void initdata() {
         title = getIntent().getStringExtra("title");
         type = getIntent().getIntExtra("type",0);
-        if (type==1){
+        if (type==1||type==2){
             showTitleLeftTvAndImg(title, "返回", R.mipmap.back, new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

@@ -107,7 +107,7 @@ public class MyJobWantedIndexActivity extends BaseActivity {
                                                     runOnUiThread(new Runnable() {
                                                         @Override
                                                         public void run() {
-                                                            MyToastUtil.showMEssage(MyJobWantedIndexActivity.this, "删除租房信息成功");
+                                                            MyToastUtil.showMEssage(MyJobWantedIndexActivity.this, "删除招聘信息成功");
 
                                                         }
                                                     });

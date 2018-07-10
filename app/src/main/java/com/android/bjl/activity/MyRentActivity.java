@@ -134,14 +134,16 @@ public class MyRentActivity extends BaseActivity implements View.OnClickListener
             try {
 
 
-                String IMAGE_FILE_LOCATION = Environment.getExternalStorageDirectory()
-                        + "/test/photo.jpg";
-
-                mTmpFile = new File(IMAGE_FILE_LOCATION);
-                if (!mTmpFile.getParentFile().exists()) {
-                    mTmpFile.getParentFile().mkdirs();
-                }
-
+//                String IMAGE_FILE_LOCATION = Environment.getExternalStorageDirectory()
+//                        + "/test/photo.jpg";
+//
+//                mTmpFile = new File( Environment.getExternalStorageDirectory(),"/DCIM/Camera/photo.jpg");
+//                if (!mTmpFile.getParentFile().exists()) {
+//                    mTmpFile.getParentFile().mkdirs();
+//                }
+                // 设置系统相机拍照后的输出路径
+                // 创建临时文件
+                mTmpFile = OtherUtils.createTmpFile(getApplicationContext());
                 Uri imageUri = null;
                 //判断是否是AndroidN以及更高的版本
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
@@ -159,9 +161,7 @@ public class MyRentActivity extends BaseActivity implements View.OnClickListener
                 }
 
 
-                // 设置系统相机拍照后的输出路径
-                // 创建临时文件
-//                mTmpFile = OtherUtils.createTmpFile(getApplicationContext());
+
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -186,7 +186,6 @@ public class MyRentActivity extends BaseActivity implements View.OnClickListener
         done = (Button) findViewById(R.id.btn_myrent_done);
         done.setOnClickListener(this);
         adapter = new GridAdapter(this);
-        adapter.update();
         noScrollgridview.setAdapter(adapter);
         noScrollgridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -516,4 +515,5 @@ public class MyRentActivity extends BaseActivity implements View.OnClickListener
             return true;
         }
     }
+
 }

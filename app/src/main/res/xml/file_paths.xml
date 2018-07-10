@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <paths >
-    <external-path path="Android/data/com.android.bjl/" name="files_root" />
-    <external-path path="test/" name="external_storage_root" />
+    <external-path path="/DCIM/" name="files_root" />
+    <cache-path
+        name="files_cache"
+        path="/"/>
 </paths>
